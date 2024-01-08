@@ -3,26 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Vite App</title>
+    
   </head>
   <body class="">
+    <div id="navigation-cmp" class="navigation-container">x</div>
     <div id="app">
-      <a href="https://vitejs.dev" target="_blank">
-        <img src="/vite.svg" class="logo" alt="Vite logo" />
-      </a>
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        target="_blank"
-      >
-        <img src="/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      </a>
+     
       <h1>Hello Vite!</h1>
       <div class="card">
-        <button id="counter" type="button"></button>
+        <button id="counter" type="button">hello</button>
       </div>
       <p class="read-the-docs">Click on the Vite logo to learn more</p>
+      <p><a href="_page.html">Go to page</a></p>
+      <p><a href="./_public_page.html">Go to another page</a></p>
     </div>
-    <script type="module" src="/main.js"></script>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/cmp-navigation.js"></script>
   </body>
 </html>

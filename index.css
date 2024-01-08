@@ -32,6 +32,9 @@
   body {
     margin: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
@@ -47,6 +50,12 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+  }
+
+  #navigation-cmp {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
   
   .logo {
