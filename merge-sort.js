@@ -1,7 +1,9 @@
-import mergeSortSA from "./merge-sort-sa.js";
-import mergeSortExOne from "./merge-sort-exampleOne.js";
-import mergeSortGG from "./merge-sort-gg.js";
-import myMergeSort from "./merge-sort-my.js"
+import {
+  mergeSortSA,
+  mergeSortExOne,
+  mergeSortGG,
+  myMergeSort,
+} from "./merge-sort-functions.js";
 
 const unsortedArrayZero = [
   517, 294, 552, 644, 59, 511, 5, 624, 654, 74, 285, 416, 551, 217, 755, 154,
@@ -37,5 +39,11 @@ const sortedOne = mergeSortExOne(unsortedArrayOne);
 mergeSortGG(unsortedArrayTwo, 0, unsortedArrayTwo.length - 1);
 const sortedTwo = Array.from(unsortedArrayTwo);
 const sortedThree = myMergeSort(unsortedArrayThree);
-const examples = [unsortedArrayOne, sortedZero, sortedOne, sortedTwo, sortedThree];
+const examples = [
+  unsortedArrayOne,
+  sortedZero,
+  sortedOne,
+  sortedTwo,
+  sortedThree,
+];
 insertInDOM(examples);
