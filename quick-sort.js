@@ -5,7 +5,7 @@ const unsortedArrayZero = [
 // copy array before sorting to check the results at the end
 const unsortedArray = Array.from(unsortedArrayZero);
 
-function quickSort(array) {
+function myQuickSort(array) {
   const arrayLength = array.length;
   let indexPointer = 0;
   let switchPointer = 0;
@@ -28,5 +28,32 @@ function quickSort(array) {
 
   return array;
 }
+function quickSort(array, start, end) {
+  // base
+  if (end - start + 1 <= 1) {
+    return array;
+  }
 
-console.log(quickSort(unsortedArrayZero));
+  let pivot = array[end];
+  let lastSwitch = start;
+
+  for (let i = start; i < end; i++) {
+    if (array[i] < pivot) {
+      let tmp = array[lastSwitch];
+      array[lastSwitch] = array[i];
+      array[i] = tmp;
+      lastSwitch++;
+    }
+  }
+  // switch pivot value where the lastSwitch "pointer" is
+  array[end] = array[lastSwitch];
+  array[lastSwitch] = pivot;
+
+  quickSort(array, start, lastSwitch - 1);
+  quickSort(array, lastSwitch + 1, end);
+
+  return array.toString();
+}
+// console.log(myQuickSort(unsortedArrayZero));
+console.log(unsortedArrayZero.toString());
+console.log(quickSort(unsortedArrayZero, 0, unsortedArrayZero.length));
