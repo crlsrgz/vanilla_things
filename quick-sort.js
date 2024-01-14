@@ -54,6 +54,19 @@ function quickSort(array, start, end) {
 
   return array.toString();
 }
+function insertInDOM(element = []) {
+  const arrayLength = element.length;
+  const appElement = document.getElementById("app");
+
+  // appElement.textContent = typeof element !== 'string' ? element : element;
+  element.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.textContent = `${index}-> ${item}`;
+    appElement.appendChild(div);
+  });
+}
 // console.log(myQuickSort(unsortedArrayZero));
 console.log(unsortedArrayZero.toString());
 console.log(quickSort(unsortedArrayZero, 0, unsortedArrayZero.length));
+
+insertInDOM([unsortedArray, unsortedArrayZero]);

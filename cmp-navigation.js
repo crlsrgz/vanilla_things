@@ -1,4 +1,11 @@
-const links = ["/", "elf", "insertion-sort", "merge-sort", "quick-sort"];
+const links = [
+  "/",
+  "elf",
+  "insertion-sort",
+  "merge-sort",
+  "quick-sort",
+  "bucket-sort",
+];
 
 function NavigationMenu(links) {
   const navigation = document.getElementById("navigation-cmp");
