@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="../index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Insertion Sort</title>
+
+</head>
+
+<body class="">
+  <div id="app">
+    <div id="navigation-cmp" class="navigation-container">x</div>
+
+    <h1>Insertion Sort</h1>
+    <p>
+      - Insertion sort will traverse the array using a for loop
+    </p>
+    <p>
+      - I will the search and compare whats the next lower value using a while lop
+    </p>
+    <p>
+  - If theres a lower value it will swapt it
+    </p>
+    <p>
+  - Open the console to view the steps with the swaps
+    </p>
+    <pre>
+      <code class="block">
+        function insertionSort(array) {
+          const arrayLength = array.length;
+          for (let i = 1; i &#60; arrayLength; i++) {
+            let j = i - 1;        
+            while (j >= 0 && array[j + 1] &#60; array[j]) {
+              let temp = array[j + 1];
+              array[j + 1] = array[j];
+              array[j] = temp;
+              j--;
+            }
+            
+          }
+          return array;
+        }
+      </code>
+    </pre>
+  </div>
+  <script type="module" src="/sorting/insertion-sort.js"></script>
+</body>
+
+</html>

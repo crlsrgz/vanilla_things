@@ -1,3 +1,7 @@
+import "../index.css";
+import NavigationMenu from "../src/cmp-navigation";
+NavigationMenu();
+
 import {
   mergeSortSA,
   mergeSortExOne,

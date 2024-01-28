@@ -32,10 +32,7 @@
   body {
     margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    place-items: center;
+    align-items: start;
     min-width: 320px;
     min-height: 100vh;
   }
@@ -45,11 +42,19 @@
     line-height: 1.1;
   }
   
+#app code {
+  font-family: Fira Code, Tahoma, Courier new;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: start ;
+  word-wrap: break-word;
+}
+
   #app {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+    /* text-align: center; */
   }
 
   #navigation-cmp {
@@ -58,6 +63,13 @@
     gap: 1rem;
   }
   
+  .navigation-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+
   .logo {
     height: 6em;
     padding: 1.5em;

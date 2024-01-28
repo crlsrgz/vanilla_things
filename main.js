@@ -1,6 +1,9 @@
+import "./index.css";
+import "./style.css";
 
 import { setupCounter } from "./counter.js";
-
+import NavigationMenu from "./src/cmp-navigation.js";
+NavigationMenu();
 const text = "hello";
 
 async function getData() {
@@ -10,7 +13,7 @@ async function getData() {
     const response = await fetch(apiUrl);
     let apiQuotes = await response.json();
 
-    console.log(apiQuotes);
+    // console.log(apiQuotes);
 
     return apiQuotes;
   } catch (error) {

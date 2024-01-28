@@ -1,13 +1,17 @@
-const links = [
-  "/",
-  "elf",
-  "insertion-sort",
-  "merge-sort",
-  "quick-sort",
-  "bucket-sort",
-];
+export default function NavigationMenu() {
+  const links = [
+    "/",
+    "elf",
+    "bubble-sort",
+    "insertion-sort",
+    "merge-sort",
+    "quick-sort",
+    "bucket-sort",
+    "queue",
+    "stack",
+    "recursion-one",
+  ];
 
-function NavigationMenu(links) {
   const navigation = document.getElementById("navigation-cmp");
   // console.log(navigation);
 
@@ -21,10 +25,9 @@ function NavigationMenu(links) {
       linkElement.href = `${links[i]}`;
     } else {
       linkElement.textContent = links[i];
-      linkElement.href = `${links[i]}.html`;
+      linkElement.href = `/sorting/${links[i]}.html`;
     }
     divElement.appendChild(linkElement);
     navigation.appendChild(divElement);
   }
 }
-NavigationMenu(links);

@@ -1,3 +1,6 @@
+import NavigationMenu from "../src/cmp-navigation";
+NavigationMenu();
+
 const unsortedArrayZero = [
   0, 1, 2, 3, 5, 6, 8, 9, 0, 1, 3, 4, 6, 7, 9, 0, 1, 3, 4, 5, 6, 7, 8, 9,
 ];
@@ -32,7 +35,7 @@ function insertInDOM(element = []) {
   });
 }
 // console.log(myQuickSort(unsortedArrayZero));
-console.log(unsortedArrayZero.toString());
-console.log(bucketSort(unsortedArrayZero));
+// console.log(unsortedArrayZero.toString());
+// console.log(bucketSort(unsortedArrayZero));
 
 insertInDOM([unsortedArray, unsortedArrayZero]);

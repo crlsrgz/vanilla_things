@@ -1,3 +1,8 @@
+import "../index.css";
+
+import NavigationMenu from "../src/cmp-navigation";
+NavigationMenu();
+
 const unsortedArrayZero = [
   517, 294, 552, 644, 59, 511, 5, 624, 654, 74, 285, 416, 551, 217, 154, 180,
   668, 521, 650,
@@ -11,12 +16,15 @@ function insertionSort(array) {
     let j = i - 1;
 
     while (j >= 0 && array[j + 1] < array[j]) {
+      console.log(
+        `step ${i} : ${array[j + 1]} - ${array[j]} :: ${array.toString()}`,
+      );
       let temp = array[j + 1];
       array[j + 1] = array[j];
       array[j] = temp;
       j--;
     }
-    console.log(`step ${i}=`, array.toString());
+    console.log(`step ${i} ▶`, array.toString());
   }
   return array;
 }
