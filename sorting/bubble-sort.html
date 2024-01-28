@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="../index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bubble Sort</title>
+
+</head>
+
+<body >
+  <div id="app">
+    <div id="navigation-cmp" class="navigation-container">x</div>
+
+    <h1>Bubble Sort</h1>
+    <p>
+      - 
+    </p>
+    
+
+    <pre>
+      <code class="block">
+        function bubbleSort(array) {
+          for (let i = 0; i &#60; array.length; ++i) {
+            for (let j = 0; j &#60; array.length - i - 1; ++j) {
+              if (arr[j] > arr[j + 1]) {
+                const tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+              }
+            }
+          }
+          return array;
+        }
+       
+      </code>
+    </pre>
+  </div>
+  <script type="module" src="/sorting/bubble-sort.js"></script>
+</body>
+
+</html>
